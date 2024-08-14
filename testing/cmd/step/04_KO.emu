@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="Testing the 'step' interpreter command, standard behavior."
+#-------
+
+load elf/boucle.o
+stap

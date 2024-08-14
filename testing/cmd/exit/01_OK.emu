@@ -1,0 +1,6 @@
+#-------
+#TEST_RETURN_CODE=PASS
+#TEST_COMMENT="Testing the 'exit' interpreter command, standard behavior."
+#-------
+
+exit

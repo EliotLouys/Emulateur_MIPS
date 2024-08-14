@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=PASS
+#TEST_COMMENT="Testing the 'disasm' interpreter command: dico"
+#-------
+
+load elf/test_disasm.o
+disasm 0x1000+255

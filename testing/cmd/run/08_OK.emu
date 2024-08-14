@@ -1,0 +1,13 @@
+#-------
+#TEST_RETURN_CODE=PASS
+#TEST_COMMENT="Testing the 'run' interpreter command, standard behavior."
+#-------
+
+load elf/pile.o 0x5000
+assert word 0x5000 $pc
+assert word 0xffffeffc $sp
+set reg $pc 0x1000
+run 0x5000
+
+
+

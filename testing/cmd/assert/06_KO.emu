@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="Testing the 'assert' interpreter command:If there is no argument"
+#-------
+
+load elf/exempleELF.o
+assert

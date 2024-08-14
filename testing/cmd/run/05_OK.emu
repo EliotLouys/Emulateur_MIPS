@@ -1,0 +1,21 @@
+#-------
+#TEST_RETURN_CODE=PASS
+#TEST_COMMENT="Testing the 'run' interpreter command, standard behavior."
+#-------
+
+load elf/exempleELF2.o 
+set reg $t7 0x80000000 $t1 1 $s0 0xffffffff  $v0 1
+set reg $s3 0xffff0000 $s4 0x000f0000
+set reg $s5 2 $s6 4
+assert word 0xffffffff $s0
+assert word 1 $v0
+assert word 1 $t1
+assert word 0x80000000 $t7
+assert word 0x1000 $pc
+run
+assert word 0x7fffffff $s0
+assert word 0xfff00000 $s2
+assert word 0 $hi
+assert word 0x00000008 $lo
+
+

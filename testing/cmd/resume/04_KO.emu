@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="Testing the 'resume' interpreter command: If it was already in script mode, it doesn't do anything"
+#-------
+
+resume
+resume

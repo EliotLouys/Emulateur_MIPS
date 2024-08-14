@@ -1,0 +1,35 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="Testing the branchment instruction, standard behavior."
+#-------
+
+load elf/test_branchement.o
+assert word 0x1000 $pc
+assert word 0 $t0
+assert word 0 $t1
+assert word 0 $t2
+assert word 0 $t3
+assert word 0 $t4
+assert word 0 $t5
+set reg $t2 1
+step into 
+assert word 0x1004 $pc
+assert word -4 $t0
+step into
+assert word 0x100c $pc
+step into
+assert word 0x1010 $pc
+assert word -4 $t2
+step into
+assert word 0x101c $pc
+step into
+assert word 0x1020 $pc 
+assert word 40 $t3
+step into 
+assert word 0x102c $pc
+step into 
+assert word 0x1030 $pc
+assert word 3 $t4
+set reg $t3 0
+step into 
+assert word 0x103c $pc

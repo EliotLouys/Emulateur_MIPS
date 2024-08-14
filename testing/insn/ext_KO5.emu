@@ -1,0 +1,8 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="Testing the ext instruction, conditions not respected on pos or size."
+#-------
+
+load elf/test_ext.o
+set reg $t1 0x00F0 $t2 24 $t3 16
+assert word 0x000F $t0

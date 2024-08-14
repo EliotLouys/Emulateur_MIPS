@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="Testing the 'assert' interpreter command:If the value is too low."
+#-------
+
+load elf/exempleELF.o
+assert word -268435457 0x200c

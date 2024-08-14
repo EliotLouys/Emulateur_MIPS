@@ -1,0 +1,6 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="Testing the 'bar' interpreter command: just to show the starter code is incorrect because 0x09YZER does not (yet!) raise an error."
+#-------
+
+bar 0x09YZER

@@ -1,0 +1,9 @@
+#-------
+#TEST_RETURN_CODE=PASS
+#TEST_COMMENT="Testing the 'run' interpreter command, standard behavior."
+#-------
+
+load elf/boucle.o
+disp reg $pc $t1 $zero $t2
+run 0x1000
+disp reg $pc $t1 $zero $t2

@@ -1,0 +1,6 @@
+#-------
+#TEST_RETURN_CODE=PASS
+#TEST_COMMENT="Test loading a valid ELF file, using default address."
+#-------
+
+load elf/exempleELF.o 

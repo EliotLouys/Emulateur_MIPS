@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="Testing the 'set' interpreter command, ensuring the command cannot work without argument"
+#-------
+
+load elf/exempleELF.o
+set

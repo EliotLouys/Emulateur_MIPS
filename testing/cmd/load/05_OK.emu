@@ -1,0 +1,8 @@
+#-------
+#TEST_RETURN_CODE=PASS
+#TEST_COMMENT="Test loading a valid ELF file, using default address."
+#-------
+
+load elf/exempleELF.o 
+assert word 0x1000 $pc
+assert word 0xffffeffc $sp

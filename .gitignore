@@ -1,0 +1,22 @@
+# Content of the .gitignore file
+
+#  ignore object files compiled with     make debug
+*.dbg.o
+
+#  ignore object files compiled with     make release
+*.rls.o
+
+#  ignore executable binary    emulmips
+emulmips
+
+#  ignore outputs of emulmips, when tested using simpleUnitTest.sh
+*.out
+
+#  ignore pdf
+*.pdf
+
+# ignore livrables README
+README Livrable 1.txt
+README Livrable 2.txt
+
+# Learn more on .gitignore ? See https://git-scm.com/docs/gitignore

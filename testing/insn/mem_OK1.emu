@@ -1,0 +1,52 @@
+#-------
+#TEST_RETURN_CODE=PASS
+#TEST_COMMENT="Testing the mem instruction, standard behavior."
+#-------
+
+
+load elf/test_mem.o
+set reg $s0 0x2000
+set reg $s1 0x2004
+set reg $s2 0x2004
+set reg $s3 0x2008
+set reg $t3 255
+set reg $t4 0x0000f0f0
+set mem 0x2000 byte 0
+set mem 0x2004 word 0
+assert word 0 0x2004
+assert byte 0 0x2000
+assert word 0 $t0
+assert word 0 $t1
+assert word 0 $t2
+assert word 0x1000 $pc
+step 
+assert word 0x1004 $pc
+assert byte 255 0x2000
+step
+assert word 0x1008 $pc
+assert word 0x0000f0f0 0x2004
+step 
+assert word 0x100c $pc
+assert word 0xffffffff $t0
+step
+assert word 0x1010 $pc
+assert word 0x000000ff $t1
+step
+assert word 0x1014 $pc
+assert word 0x0000f0f0 $t2
+step
+assert byte 255 0x2008
+step 
+assert word 0xffffffff $t5
+step
+assert word 0x0000f0f0 0x200c
+step
+assert word 0x0000f0f0 $t6
+step
+assert byte 255 0x2000
+step 
+assert word 0xffffffff $t5
+step
+assert word 0x0000f0f0 0x2004
+step
+assert word 0x0000f0f0 $t6

@@ -1,0 +1,8 @@
+#-------
+#TEST_RETURN_CODE=PASS
+#TEST_COMMENT="Testing the 'assert' interpreter command: standard behavior."
+#-------
+
+load elf/exempleELF.o
+set reg $v0 2
+assert word 2 $v0

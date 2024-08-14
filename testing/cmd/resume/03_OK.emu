@@ -1,0 +1,6 @@
+#-------
+#TEST_RETURN_CODE=PASS
+#TEST_COMMENT="Testing the 'resume' interpreter command: If there is no resume, it stays in debug mode"
+#-------
+
+debug

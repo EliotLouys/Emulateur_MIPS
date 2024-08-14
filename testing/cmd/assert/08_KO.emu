@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="Testing the 'assert' interpreter command: bad orthograph of the commands."
+#-------
+
+load elf/exempleELF.o
+assert wordd 0xC $v0

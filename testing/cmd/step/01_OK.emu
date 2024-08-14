@@ -1,0 +1,11 @@
+#-------
+#TEST_RETURN_CODE=PASS
+#TEST_COMMENT="Testing the 'step' interpreter command, standard behavior."
+#-------
+
+load elf/exempleELF.o
+step
+assert word 0x1004 $pc
+step into
+assert word 0x1008 $pc
+

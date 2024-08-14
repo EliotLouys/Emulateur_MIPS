@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="Testing the 'assert' interpreter command:If the command only has 1 argument"
+#-------
+
+load elf/exempleELF.o
+assert byte

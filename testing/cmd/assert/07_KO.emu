@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="Testing the 'assert' interpreter command: if the value is incorrect"
+#-------
+
+load elf/exempleELF.o
+assert word abc $v0

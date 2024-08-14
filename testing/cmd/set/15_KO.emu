@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="Testing the 'set' interpreter command, standard behavior."
+#-------
+
+load elf/exempleELF.o
+set reg $t1 4294967296

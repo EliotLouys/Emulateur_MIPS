@@ -1,0 +1,4 @@
+#-------
+#TEST_RETURN_CODE=PASS
+#TEST_COMMENT="Testing the 'debug' interpreter command:if there is no debug in the file, the interpreter continues to run."
+#-------

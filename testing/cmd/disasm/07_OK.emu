@@ -1,0 +1,11 @@
+#-------
+#TEST_RETURN_CODE=PASS
+#TEST_COMMENT="Testing the 'disasm' interpreter command: standard behavior. Function BGTZ rs = 4, offset=0xFFFF and BLEZ rs=2 offset=0xFFFF
+#-------
+
+load elf/exempleELF.o
+set mem 0x1000 word 0x1C80FFFF
+assert word 0x1C80FFFF 0x1000
+set mem 0x1004 word 0x1840FFFF
+assert word 0x1840FFFF 0x1004
+disasm 0x1000:0x1004

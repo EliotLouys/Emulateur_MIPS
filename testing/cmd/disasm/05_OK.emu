@@ -1,0 +1,11 @@
+#-------
+#TEST_RETURN_CODE=PASS
+#TEST_COMMENT="Testing the 'disasm' interpreter command: standard behavior. Function AND rs = 4, rt = 2, rd=1 and ANDI rs=2 rt=4 immediate=0xFFFF"
+#-------
+
+load elf/exempleELF.o
+set mem 0x1000 word 0x820824
+assert word 0x820824 0x1000
+set mem 0x1004 word 0x3044FFFF
+assert word 0x3044FFFF 0x1004
+disasm 0x1000:0x1004

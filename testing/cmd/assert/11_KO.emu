@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="Testing the 'assert' interpreter command:If there is no loaded file"
+#-------
+
+
+assert word 2 $v0

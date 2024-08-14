@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="Test loading a valid ELF file, non-hex address."
+#-------
+
+load elf/exempleELF.o 1234
+

@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="Testing the 'disasm' interpreter command: out of text segment"
+#-------
+
+load elf/exempleELF.o
+disasm 0x2004:0x200f

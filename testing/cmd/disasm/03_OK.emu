@@ -1,0 +1,11 @@
+#-------
+#TEST_RETURN_CODE=PASS
+#TEST_COMMENT="Testing the 'disasm' interpreter command: standard behavior. Function ADD rs = 4, rt = 2, rd=1 and ADDI rs=2 rt=4 immediate=0xFFFF"
+#-------
+
+load elf/exempleELF.o
+set mem 0x1000 word 0x820820
+assert word 0x820820 0x1000
+set mem 0x1004 word 0x2044FFFF
+assert word 0x2044FFFF 0x1004
+disasm 0x1000+8

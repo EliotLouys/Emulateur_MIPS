@@ -1,0 +1,13 @@
+#-------
+#TEST_RETURN_CODE=PASS
+#TEST_COMMENT="Testing the cmp instruction, standard behavior."
+#-------
+
+
+load elf/test_cmp.o
+set reg $t1 5 $t2 10
+run 
+assert word 1 $t0
+assert word 0 $t3
+assert word 1 $t4
+assert word 1 $t5

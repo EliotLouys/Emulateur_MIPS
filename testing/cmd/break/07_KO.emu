@@ -1,0 +1,10 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="Testing the 'break' interpreter command, standard behavior."
+#-------
+
+load elf/boucle.o
+break add 0x2000
+
+
+

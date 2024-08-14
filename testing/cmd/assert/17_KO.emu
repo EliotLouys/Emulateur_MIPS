@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="Testing the 'assert' interpreter command:If the registre name is incorrect."
+#-------
+
+load elf/exempleELF.o
+assert byte 256 0x200c

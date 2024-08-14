@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="Test loading a valid ELF file, two addresses."
+#-------
+
+load elf/exempleELF.o 0x5000 0x3000
+

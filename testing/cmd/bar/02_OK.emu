@@ -1,0 +1,6 @@
+#-------
+#TEST_RETURN_CODE=PASS
+#TEST_COMMENT="Testing the 'bar' interpreter command: standard behavior (more args)."
+#-------
+
+bar 0x01 0xFF 0x5677 0x09

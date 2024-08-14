@@ -1,0 +1,8 @@
+#-------
+#TEST_RETURN_CODE=PASS
+#TEST_COMMENT="Testing the 'assert' interpreter command: standard behavior."
+#-------
+
+load elf/exempleELF.o
+set mem 0x100c byte 0xC
+assert byte 0xC 0x100c

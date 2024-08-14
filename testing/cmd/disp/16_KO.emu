@@ -1,0 +1,7 @@
+#-------
+#TEST_RETURN_CODE=FAIL
+#TEST_COMMENT="Testing the 'display' interpreter command"
+#-------
+
+load elf/exempleELF.o
+disp reg al
